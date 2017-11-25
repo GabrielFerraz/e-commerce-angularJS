@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap';
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
 
@@ -10,7 +11,7 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue.
-$candy-app-primary: mat-palette($mat-grey);
+$candy-app-primary: mat-palette($mat-red);
 $candy-app-accent:  mat-palette($mat-cyan, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
@@ -23,3 +24,23 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($candy-app-theme);
+
+.center-content {
+  @extend .d-flex;
+  @extend .justify-content-center;
+  @extend .align-items-center;
+}
+
+body {
+  margin: 0;
+  background-color: map-get($mat-grey, 100);
+}
+
+
+.header__search-input .mat-form-field-infix {
+  border-top: none;
+}
+
+.header__search-input--open {
+  width: 200px !important;
+}

@@ -1,0 +1,44 @@
+.header {
+  
+  &__icon {
+    font-size: 30px;
+  }
+  
+  &__logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+  }
+  
+  &__container {
+    height: 100%;
+    .row {
+      height: 100%;
+    }
+  }
+
+  &__search-input {
+    margin-bottom: -1.25em;
+    width: 0;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+    
+    &--opened {
+      width: 200px;
+    }
+  }
+  
+  &__profile-img{
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-image: url('../../assets/images/default-profile.png');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  &__profile {
+//    padding-left: 16px;
+    cursor: pointer;
+  }
+}
