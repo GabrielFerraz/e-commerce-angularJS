@@ -10,6 +10,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 import { AppComponent } from './app.component';
@@ -32,6 +33,7 @@ import { HeaderComponent } from './header/header.component';
     MatFormFieldModule,
     MatMenuModule,
     MatInputModule,
+    MatGridListModule,
     CarouselModule
   ],
   providers: [],

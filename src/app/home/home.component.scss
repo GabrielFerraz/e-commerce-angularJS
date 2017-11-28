@@ -16,3 +16,15 @@
     height: 600px;
   }
 }
+mat-grid-tile {
+  background: lightblue;
+}
+
+.home-product {
+
+  background-size: cover;
+  
+  &--horizontal {
+    background-position: center 50%;
+  }
+}
