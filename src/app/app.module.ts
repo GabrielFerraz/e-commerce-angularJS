@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -13,15 +15,13 @@ import { MatMenuModule } from '@angular/material/menu';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
-import { RoundProfileImageComponent } from './round-profile-image/round-profile-image.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent,
-    RoundProfileImageComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +31,8 @@ import { RoundProfileImageComponent } from './round-profile-image/round-profile-
     MatToolbarModule,
     MatFormFieldModule,
     MatMenuModule,
-    MatInputModule
+    MatInputModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [
